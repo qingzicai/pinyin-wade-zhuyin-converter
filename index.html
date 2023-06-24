@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css">
+<title>Pinyin-Wade-Zhuyin-Converter</title>
+</head>
+
+<body>
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">Chinese Romanization Converter</h1>
+        
+        <!-- Input Fields -->
+        <div class="mb-4">
+        <label for="inputText" class="block mb-2">Input Pinyin:</label>
+        <textarea id="inputText" class="w-full p-2 border border-gray-300 rounded" rows="5"></textarea>
+        </div>
+        
+        <!-- Conversion Options -->
+        <div class="mb-4 flex items-baseline">
+        <label for="conversionType" class="block m-2">Convert Pinyin to:</label>
+        <select id="conversionType" class="border border-gray-300 rounded">
+            <option value="wade-giles">Wade-Giles</option>
+            <option value="zhuyin">Zhuyin</option>
+        </select>
+        <button id="convertBtn" class="m-4 px-1 bg-blue-400 text-white rounded">转换</button>
+        </div>
+        
+        
+
+        <!-- Output Area -->
+        <div class="mt-4">
+            <label for="outputText" class="block mb-2">Output Text:</label>
+            <textarea id="outputText" class="w-full p-2 border border-gray-300 rounded" rows="5"></textarea>
+        </div>
+    </div>
+
+    <script src="main.js" type="module" ></script>
+</body>
+</html>
